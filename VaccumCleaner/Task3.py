@@ -13,7 +13,7 @@ def model_based_agent(location,status):
     elif world_model["B"]=="Dirty":
         return "Go to B and Suck"
     else:
-        return "Do nothing, all are clean"
+        return "No Operation"
     
 #-----Simple Reflex Agent-----
 def simple_reflex_agent(location,status):
@@ -34,9 +34,8 @@ percepts=[("A","Dirty"),("A","Clean"),("B","Dirty"),("B","Clean")]
 print("="*70)
 print("Model-Based Agent(with memory)")
 print("="*70)
-print(f"\n{'Percept':<15}" {'Action':<30} {'Memory After':<20}")
+print(f"\n{'Percept':<15} {'Action':<30} {'Memory After':<20}")
 print("-" * 70)
-
 
 world_model = {"A": "Clean", "B": "Clean"}
 for location, status in percepts:
