@@ -5,7 +5,7 @@ def simple_reflex_agent(location,status):
         return "Suck"
     elif location=="A":
         return "Move to B"
-    elif location=="B":
+    elif location=="B":  
         return "Move to A"
     else:
         return "No Operation"
