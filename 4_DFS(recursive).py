@@ -23,9 +23,6 @@ print("DFS Order: ", end='')
 
 visited = DFS_recursive(visited, graph, 'A')
 
-print()  # Adds a new line right after the DFS traversal characters print out
-print()  # Adds an extra blank line for visual spacing
-print("Visited Nodes: ", visited)
 print()
 print("-" * 50)
 print("Program by: Anuska Pradhan")
